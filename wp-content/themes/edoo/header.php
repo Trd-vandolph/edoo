@@ -33,6 +33,11 @@
 	<nav>
 		<ul>
 			<li><a href="#mainvisual">Top</a></li>
+			<li>
+                <span><a href="">Select you language:</a></span>
+                <a style="padding: 0;" href="<?php echo site_url(); ?>/?lang=en"><img src="<?php bloginfo( 'template_directory' ); ?>/img/gb.png" /></a>
+                <a href="<?php echo site_url(); ?>/?lang=ja"><img src="<?php bloginfo( 'template_directory' ); ?>/img/jp.png" /></a>
+            </li>
 			<li><a href="#about">About</a></li>
 			<li><a href="#vision">Vision</a></li>
 			<li><a href="#learning">Learning principles</a></li>
@@ -43,4 +48,3 @@
 	</nav>
 </header>
 <div id="main">
-

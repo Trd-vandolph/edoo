@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<?php the_widget( $widget, $instance, $args ); ?> 
 <section id="mainvisual">
 	<div class="wrap">
 		<div>
