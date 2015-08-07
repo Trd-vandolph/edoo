@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+#mainvisual {
+	background:url(../img/top_bg_sp.jpg) repeat center bottom;
+
+	background-size: 100%;
+	-webkit-background-size: auto 100%;
+	-moz-background-size:auto 100%;
+	-o-background-size:auto 100%;
+	-ms-background-size:auto 100%;
+}
