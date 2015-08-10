@@ -96,7 +96,8 @@ header nav li{
 header nav li:first-child{
   display: none;
 }
-header nav li a{
+header nav li a,
+header span a{
   padding:0 20px;
   font-family: 'Raleway', sans-serif;
   font-weight:700;
@@ -142,6 +143,21 @@ header.fixed h1 img{
 header.fixed nav li{
   padding: 19px 0;
 }
+header .select {
+	float: left;
+	position: relative;
+	left: 12%;
+}
+header .select a:nth-child(2){
+	margin-right: 20px;
+}
+@media only screen and (max-width: 1232px) {
+	header .select {
+		float: left;
+		position: relative;
+		left: 1%;
+	}
+}
 #toggle{
   display: none;
   margin-right: 20px;
@@ -151,24 +167,24 @@ header.fixed nav li{
 #toggle a{
   color: #333;
 }
-@media only screen and (max-width: 815px) {
+@media only screen and (max-width: 870px) {
   #toggle{
-    display: block;
+	display: block;
   }
   header nav{
-    width: 100%;
-    text-align: center;
-    line-height: 40px;
-    margin: 20px 0;
+	width: 100%;
+	text-align: center;
+	line-height: 40px;
+	margin: 20px 0;
   }
   header nav{
-    display: none;
+	display: none;
   }
   header nav li.on{
-    border:none;
+	border:none;
   }
   header nav li.on a{
-    color: #2B6651!important;
+	color: #2B6651!important;
   }
 }
 
@@ -181,6 +197,11 @@ text-align: center;
 }
 @media only screen and (max-width: 740px) {
   footer{
-    font-size:12px;
+	font-size:12px;
   }
+}
+
+/* text-align left for japanese text */
+.left {
+  text-align: left !important;
 }

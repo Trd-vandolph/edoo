@@ -112,7 +112,7 @@
 		display: block;
 		float: left;
 		width: 30%;
-		margin:0 1.5%; 
+		margin:0 1.5%;
 	}
 	#about ul li img{
 		width: 100%;
@@ -245,11 +245,11 @@
 }
 #service .olivecode{
 	background: url(../img/service_olivecode_bg.png) no-repeat left top;
-	background-size:cover; 
+	background-size:cover;
 	padding: 80px 20px;
 }
 #service .olivecode .detail,#service .olivecode h3{
-	max-width:1000px;
+	max-width:1155px;
 	margin: 40px auto 60px auto;
 	text-align: right;
 }
@@ -257,7 +257,7 @@
 	max-width: 90%;
 }
 #service .olivecode p{
-	padding-left: 45%;
+	padding-left: 53%;
 	font-family: 'Raleway', sans-serif;
 	font-size: 20px;
 	font-weight: 500;
@@ -380,13 +380,16 @@
 	}
 	#team ul li{
 		width: 30%;
-		margin:0 5% 0 0; 
+		margin:0 5% 0 0;
 	}
 	#team ul li img{
 		width: 100%;
 	}
 	#team ul li:last-child{
 		margin: 0;
+	}
+	.selectlang {
+		display: none !important;
 	}
 }
 
@@ -416,7 +419,7 @@
 @media only screen and (max-width: 740px) {
 	#team ul li,#team ul li:last-child{
 		float: none;
-		margin: 0 auto 20px auto; 
+		margin: 0 auto 20px auto;
 	}
 	#team ul li div{
 		position: relative;
@@ -540,4 +543,3 @@ div.wpcf7-mail-sent-ok,div.wpcf7-validation-errors{
 span.wpcf7-not-valid-tip{
 	text-align: left!important;
 }
-

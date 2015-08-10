@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 <section id="mainvisual">
 	<div class="wrap">
-		<div>
-			<h2><span class="first">LEARNING</span><span>CHANGES YOUR LIFE</span></h2>
-		</div>
-		<div>
-			<h3>Dhaka, the Capital of Bangladesh</h3>
-		</div>
+		<?php
+			$page = get_page_by_path( 'changes' );
+			if( isset( $page ) ) {
+				echo apply_filters( 'the_content', $page->post_content );
+			}
+		?>
 	</div>
 	<p class="balloon"><img src="<?php bloginfo( 'template_directory' ); ?>/img/balloon.png" /></p>
 </section>

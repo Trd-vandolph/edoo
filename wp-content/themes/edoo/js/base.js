@@ -46,6 +46,7 @@ $(document).ready( function () {
 
 /*  responsive menu */
 $(function(){
+
   $("#toggle").click(function(){
     $("header nav").slideToggle();
     return false;
@@ -55,8 +56,10 @@ $(function(){
     var p = 480;
     if(win > p){
       $("#menu").show();
+	  $('.selectlang').show();
     } else {
       $("#menu").hide();
+	  $('.selectlang').hide();
     }
   });
 });

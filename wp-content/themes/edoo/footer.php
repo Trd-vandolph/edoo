@@ -17,7 +17,7 @@ google.maps.event.addDomListener(window, 'load', init);
 function init() {
     var mapOptions = {
         zoom: 15,
-        center: new google.maps.LatLng(33.591435, 130.401275), 
+        center: new google.maps.LatLng(33.591435, 130.401275),
         scrollwheel: false,
         draggable: false,
         styles: [{"featureType":"water","stylers":[{"visibility":"on"},{"color":"#b5cbe4"}]},{"featureType":"landscape","stylers":[{"color":"#efefef"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#83a5b0"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#bdcdd3"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#e3eed3"}]},{"featureType":"administrative","stylers":[{"visibility":"on"},{"lightness":33}]},{"featureType":"road"},{"featureType":"poi.park","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":20}]},{},{"featureType":"road","stylers":[{"lightness":20}]}]
@@ -100,10 +100,10 @@ $(function(){
 });
 
 // read page with fade in
-$(function () { 
-    $("body").css("opacity", 0);     
-    $("body").animate({opacity: "1"}, 1000); 
-  });  
+$(function () {
+    $("body").css("opacity", 0);
+    $("body").animate({opacity: "1"}, 1000);
+  });
 jQuery( function( $ ) {
     $( 'section' ).scrollFade({
     	duration:500
@@ -111,7 +111,7 @@ jQuery( function( $ ) {
 } );
 
 // team toggle class
- $(function () { 
+ $(function () {
     if(navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
     $("#team ul li img").click(function () {
         $("#team ul li div").removeClass();
@@ -123,21 +123,21 @@ jQuery( function( $ ) {
         $(this).parent().children().addClass("open");
     });
     }
-}); 
+});
 
 
 
 //height fix to window size
 $(window).on('load resize', function(){
-    var wH = $(window).height(); 
+    var wH = $(window).height();
     var divH = $('#mainvisual').innerHeight();
     if(wH > divH){
-        $('#mainvisual').css('min-height',wH+'px'); 
+        $('#mainvisual').css('min-height',wH+'px');
     }
 });
 </script>
-<!--[if lte IE 6]>  
-<script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/js/DD_belatedPNG_0.0.8a.js"></script>  
+<!--[if lte IE 6]>
+<script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/js/DD_belatedPNG_0.0.8a.js"></script>
 <script type="text/javascript">
     var oldFixPng = DD_belatedPNG.fixPng;
     DD_belatedPNG.fixPng = function (el) {
