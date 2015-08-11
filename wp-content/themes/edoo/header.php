@@ -1,3 +1,18 @@
+<!-- require_once('geoplugin.class.php');
+$geoplugin = new geoPlugin();
+$geoplugin->locate();
+// create a variable for the country code
+$var_country_code = $geoplugin->countryCode;
+// redirect based on country code:
+if ($var_country_code == "AL") {
+header('Location: http://sq.wikipedia.org/');
+}
+else if ($var_country_code == "NL") {
+header('Location: http://nl.wikipedia.org/');
+}
+else {
+header('Location: http://en.wikipedia.org/');
+} -->
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -42,6 +57,7 @@
 			<li><a href="#vision"><?php echo get_the_title( 6 ); ?></a></li>
 			<li><a href="#learning"><?php echo get_the_title( 8 ); ?></a></li>
 			<li><a href="#service"><?php echo get_the_title( 10 ); ?></a></li>
+			<li><a href="#responsive"><?php echo get_the_title( 172 ); ?></a></li>
 			<li><a href="#team"><?php echo get_the_title( 17 ); ?></a></li>
 			<li><a href="#contact"><?php echo get_the_title( 12 ); ?></a></li>
 		</ul>
