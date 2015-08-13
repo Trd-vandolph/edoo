@@ -21,6 +21,7 @@ header('Location: http://en.wikipedia.org/');
 <title><?php wp_title(); ?></title>
 <meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_directory' ); ?>/css/responsivepage.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_directory' ); ?>/css/common.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_directory' ); ?>/css/index.css" />
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,600,500,800,900,300,100,200' rel='stylesheet' type='text/css'>
@@ -44,20 +45,19 @@ header('Location: http://en.wikipedia.org/');
 <body id="<?php if(is_front_page()): ?>index<?php else: ?>lower<?php endif; ?>" onload="initialize();">
 <header>
 	<h1><a href="#index"><img src="<?php bloginfo( 'template_directory' ); ?>/img/logo.png" /></a></h1>
-    <div class="select">
-        <span class="selectlang"><a href="#">Select your language:</a></span>
+    <div class="<?php echo ($_GET['lang'] == en) ? 'select' : 'jap'; ?>">
+        <span class="<?php echo ($_GET['lang'] == en) ? 'selectlang' : 'selectjap'; ?>"><a href="#">Select your language:</a></span>
         <a href="<?php echo site_url(); ?>/?lang=en"><img src="<?php bloginfo( 'template_directory' ); ?>/img/gb.png" /></a>
         <a href="<?php echo site_url(); ?>/?lang=ja"><img src="<?php bloginfo( 'template_directory' ); ?>/img/jp.png" /></a>
     </div>
 	<div id="toggle"><a href="#"><i class="fa fa-bars"></i></a></div>
-	<nav>
+	<nav class="<?php echo ($_GET['lang'] == en) ? '' : 'japlinks'; ?>">
 		<ul>
 			<li><a href="#mainvisual">Top</a></li>
 			<li><a href="#about"><?php echo get_the_title( 2 ); ?></a></li>
 			<li><a href="#vision"><?php echo get_the_title( 6 ); ?></a></li>
 			<li><a href="#learning"><?php echo get_the_title( 8 ); ?></a></li>
 			<li><a href="#service"><?php echo get_the_title( 10 ); ?></a></li>
-			<li><a href="#responsive"><?php echo get_the_title( 172 ); ?></a></li>
 			<li><a href="#team"><?php echo get_the_title( 17 ); ?></a></li>
 			<li><a href="#contact"><?php echo get_the_title( 12 ); ?></a></li>
 		</ul>

@@ -56,10 +56,12 @@ $(function(){
     var p = 480;
     if(win > p){
       $("#menu").show();
-	  $('.selectlang').show();
+	//   $('.selectlang').show();
+	//   $('.selectjap').show();
     } else {
       $("#menu").hide();
-	  $('.selectlang').hide();
+	//   $('.selectlang')hide();
+	//   $('.selectjap').hide();
     }
   });
 });

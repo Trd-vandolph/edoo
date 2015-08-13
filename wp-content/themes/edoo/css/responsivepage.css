@@ -1,0 +1,245 @@
+@charset "utf-8";
+
+#main #first, #main #second,
+#main #third, #main #fourth {
+	max-width: 755px;
+	margin: auto;
+	padding: 0 18px;
+}
+#first p, #second p,
+#third p, #fourth p  {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	line-height: 1.6;
+	color: #595757;
+}
+
+.green {
+	background: #2DB58E;
+	padding: 14px;
+	color: white !important;
+	font-size: 18px;
+}
+.center {
+	text-align: center;
+}
+
+/*First Page*/
+#first {
+	margin-top: 100px !important;
+}
+#first .google {
+	text-align: center;
+	font-size: 180%;
+	color: #2DB58E;
+	padding: 10px 0;
+}
+#first .google_img {
+	text-align: center;
+}
+#first .google_img img {
+	box-shadow: 5px 5px 30px #888888;
+}
+#first .summary {
+	background: url(../img/firstpage-head.png) no-repeat right top;
+	background-size:50% auto;
+	max-width: 1160px;
+}
+@media only screen and (max-width: 1145px) {
+	#first .summary {
+	background-size:auto 100%;
+	}
+}
+#first .summary .inner {
+	width:50%;
+	margin-right:50%;
+	background: #2DB58E;
+}
+#first .summary h2 {
+	font-family: 'Raleway', sans-serif;
+	font-size:66px;
+	font-weight:900;
+	color:#fff;
+	padding:60px 20px 20px 40px;
+}
+#first .summary h2 {
+	padding:60px 20px 20px 30px !important;
+}
+#first .summary .inner p{
+	font-family: 'Raleway', sans-serif;
+	font-size: 215%;
+	color: #fff;
+	padding: 30px;
+	/*font-weight: 900;*/
+	line-height: 1.3;
+}
+#first .summary aside {
+	font-size:20px;
+	color:#666;
+	padding:0 20px 60px 40px;
+}
+#first .contents {
+	background: url(../img/text_bg.png);
+	padding: 8px 30px;
+	margin: 23px 0;
+	border-radius: 20px;
+}
+#first .contents p {
+	margin: 20px 0;
+	line-height: 1.5;
+	color: #595757;
+}
+#first .contents p span {
+	padding: 5px 12px;
+	background: #2DB58E;
+	color: white;
+}
+#first .contents ul {
+	max-width:980px;
+	margin:auto;
+	padding:80px 0;
+	text-align:center;
+}
+#first .contents ul li {
+	width:33%;
+	float:left;
+}
+#first .contents li h3 {
+	font-family: 'Raleway', sans-serif;
+	font-size:22px;
+	color:#333;
+	margin:0 0 40px 0;
+}
+#first .contents li aside {
+	margin:0 0 40px 0;
+	padding:0 20px;
+}
+#first .contents li p {
+	font-size:16px;
+	color:#666;
+	padding:0 15px;
+}
+@media only screen and (max-width: 740px) {
+	#first .summary {
+		padding-top: 300px;
+		background-position: center top;
+	}
+	#first .summary .inner {
+		width: 100%;
+		margin-left: 0;
+		min-height: 300px;
+	}
+	#first .contents ul li {
+		width:100%;
+		float:none;
+		border:none;
+		margin-bottom: 40px;
+	}
+	#first .summary h2 {
+		padding-top: 40px;
+		font-size:40px;
+	}
+	#first .summary p {
+		font-size: 20px;
+	}
+	#first .summary aside {
+		padding-bottom: 40px;
+	}
+}
+@media only screen and (max-width: 450px) {
+	#first .summary {
+		background-size: auto 300px;
+	}
+}
+
+
+/* Second */
+#second .contents p {
+	margin: 20px 0;
+	line-height: 1.5;
+	color: #595757;
+}
+#second > div > p:nth-child(4),
+#second > div > p:nth-child(9) {
+	text-align: center;
+}
+
+/* Third */
+#third .contents .one,
+#third .contents .two,
+#third .contents .four {
+	padding: 10px;
+}
+#third .contents .one p,
+#third .contents .two p,
+#third .contents .four p {
+	width: 50%;
+	float: left;
+}
+#third .contents .one p img,
+#third .contents .two p img,
+#third .contents .four p img {
+	width: 100%;
+}
+
+/* Fourth */
+
+#fourth {
+	clear: both;
+}
+#fourth .one {
+	padding-top: 30px;
+}
+
+#fourth .one div, #fourth .two div,
+#fourth .three div, #fourth .four div {
+	border: 4px solid #2DB58E;
+	border-radius: 11px;
+	box-shadow: 1px 2px 8px;
+}
+#fourth .one div .title,
+#fourth .two div .title,
+#fourth .three div .title,
+#fourth .four div .title {
+	width: 28%;
+	float: left;
+	font-size: 25px;
+	padding: 18px 10px;
+	box-sizing: border-box;
+	background: #2DB58E;
+	text-align: center;
+	border-radius: 1px;
+	color: white;
+}
+#fourth .one div p,
+#fourth .two div p,
+#fourth .three div p,
+#fourth .four div p {
+	width: 72%;
+	display: inline-block;
+	padding: 7px 10px;
+	box-sizing: border-box;
+}
+#fourth .center {
+	margin-top: 14px;
+}
+#fourth .footer-edoo {
+    font-size: 40px;
+}
+#fourth .footer-address {
+    font-size: 22px;
+}
+#fourth .footer-green span {
+	padding: 5px 12px;
+	background: #2DB58E;
+	color: white;
+}
+#fourth .footer-green p,
+#fourth .footer-green p,
+#fourth .footer-green p,
+#fourth .footer-green p {
+	width: 50%;
+	float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}

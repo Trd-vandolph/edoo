@@ -148,16 +148,41 @@ header .select {
 	position: relative;
 	left: 12%;
 }
-header .select a:nth-child(2){
-	margin-right: 20px;
+header .jap {
+	float: left;
+	position: relative;
+	left: 5%;
+}
+header .select a:nth-child(2),
+header .jap a:nth-child(2){
+	margin-right: 10px;
+}
+@media only screen and (max-width: 1450px) {
+	header .select {
+		left: 10%;
+	}
+	header .jap {
+		left: 8%;
+	}
+}
+@media only screen and (max-width: 1350px) {
+	header .select {
+		left: 5%;
+	}
 }
 @media only screen and (max-width: 1232px) {
 	header .select {
-		float: left;
-		position: relative;
 		left: 1%;
 	}
+    header .jap {
+        left: 0%;
+    }
 }
+/*@media only screen and (max-width: 1160px) {
+	header .japlinks li a {
+		font-size: 13px;
+	}
+}*/
 #toggle{
   display: none;
   margin-right: 20px;
@@ -167,7 +192,7 @@ header .select a:nth-child(2){
 #toggle a{
   color: #333;
 }
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 1150px) {
   #toggle{
 	display: block;
   }
@@ -185,6 +210,9 @@ header .select a:nth-child(2){
   }
   header nav li.on a{
 	color: #2B6651!important;
+  }
+  .selectlang {
+	  display: inline-block; !important;
   }
 }
 
