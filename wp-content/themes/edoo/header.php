@@ -1,18 +1,16 @@
-<!-- require_once('geoplugin.class.php');
-$geoplugin = new geoPlugin();
-$geoplugin->locate();
-// create a variable for the country code
-$var_country_code = $geoplugin->countryCode;
-// redirect based on country code:
-if ($var_country_code == "AL") {
-header('Location: http://sq.wikipedia.org/');
-}
-else if ($var_country_code == "NL") {
-header('Location: http://nl.wikipedia.org/');
-}
-else {
-header('Location: http://en.wikipedia.org/');
-} -->
+<?php
+	// require_once('geoplugin.class.php');
+	// $geoplugin = new geoPlugin();
+	// $geoplugin->locate();
+	// // create a variable for the country code
+	// $var_country_code = $geoplugin->countryCode;
+	// // redirect based on country code:
+	// if ($var_country_code == "PH") {
+	// 	header('Location: http://google.com/');
+	// } else {
+	// 	header('Location: http://en.wikipedia.org/');
+	// }
+?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -44,14 +42,14 @@ header('Location: http://en.wikipedia.org/');
 
 <body id="<?php if(is_front_page()): ?>index<?php else: ?>lower<?php endif; ?>" onload="initialize();">
 <header>
-	<h1><a href="#index"><img src="<?php bloginfo( 'template_directory' ); ?>/img/logo.png" /></a></h1>
-    <div class="<?php echo ($_GET['lang'] == en) ? 'select' : 'jap'; ?>">
-        <span class="<?php echo ($_GET['lang'] == en) ? 'selectlang' : 'selectjap'; ?>"><a href="#">Select your language:</a></span>
-        <a href="<?php echo site_url(); ?>/?lang=en"><img src="<?php bloginfo( 'template_directory' ); ?>/img/gb.png" /></a>
-        <a href="<?php echo site_url(); ?>/?lang=ja"><img src="<?php bloginfo( 'template_directory' ); ?>/img/jp.png" /></a>
-    </div>
+	<h1><a href="<?php echo site_url(); ?>"><img src="<?php bloginfo( 'template_directory' ); ?>/img/logo.png" /></a></h1>
+	<div class="<?php echo ($_GET['lang'] == en) ? 'select' : 'jap'; ?>">
+		<span class="<?php echo ($_GET['lang'] == en) ? 'selectlang' : 'selectjap'; ?>"><a href="#">Select your language:</a></span>
+		<a href="<?php en_flag_links(); ?>"><img src="<?php bloginfo( 'template_directory' ); ?>/img/gb.png" /></a>
+		<a href="<?php ja_flag_links(); ?>"><img src="<?php bloginfo( 'template_directory' ); ?>/img/jp.png" /></a>
+	</div>
 	<div id="toggle"><a href="#"><i class="fa fa-bars"></i></a></div>
-	<nav class="<?php echo ($_GET['lang'] == en) ? '' : 'japlinks'; ?>">
+	<nav class="<?php if($_GET['lang'] !== en) echo 'japlinks'; ?>">
 		<ul>
 			<li><a href="#mainvisual">Top</a></li>
 			<li><a href="#about"><?php echo get_the_title( 2 ); ?></a></li>
