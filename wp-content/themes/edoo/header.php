@@ -1,16 +1,3 @@
-<?php
-	// require_once('geoplugin.class.php');
-	// $geoplugin = new geoPlugin();
-	// $geoplugin->locate();
-	// // create a variable for the country code
-	// $var_country_code = $geoplugin->countryCode;
-	// // redirect based on country code:
-	// if ($var_country_code == "PH") {
-	// 	header('Location: http://google.com/');
-	// } else {
-	// 	header('Location: http://en.wikipedia.org/');
-	// }
-?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -52,12 +39,12 @@
 	<nav class="<?php if($_GET['lang'] !== en) echo 'japlinks'; ?>">
 		<ul>
 			<li><a href="#mainvisual">Top</a></li>
-			<li><a href="#about"><?php echo get_the_title( 2 ); ?></a></li>
-			<li><a href="#vision"><?php echo get_the_title( 6 ); ?></a></li>
-			<li><a href="#learning"><?php echo get_the_title( 8 ); ?></a></li>
-			<li><a href="#service"><?php echo get_the_title( 10 ); ?></a></li>
-			<li><a href="#team"><?php echo get_the_title( 17 ); ?></a></li>
-			<li><a href="#contact"><?php echo get_the_title( 12 ); ?></a></li>
+			<li><a href="<?php echo site_url() . '#about'; ?>"><?php echo get_the_title( 2 ); ?></a></li>
+			<li><a href="<?php echo site_url() . '#vision'; ?>"><?php echo get_the_title( 6 ); ?></a></li>
+			<li><a href="<?php echo site_url() . '#learning'; ?>"><?php echo get_the_title( 8 ); ?></a></li>
+			<li><a href="<?php echo site_url() . '#service'; ?>"><?php echo get_the_title( 10 ); ?></a></li>
+			<li><a href="<?php echo site_url() . '#team'; ?>"><?php echo get_the_title( 17 ); ?></a></li>
+			<li><a href="<?php echo site_url() . '#contact'; ?>"><?php echo get_the_title( 12 ); ?></a></li>
 		</ul>
 	</nav>
 </header>

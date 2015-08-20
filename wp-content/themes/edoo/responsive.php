@@ -26,7 +26,7 @@
 		}
 	?>
 </section>
-<section id="third">
+<section id="third" class="<?php echo $en; ?>">
 	<?php
 		$page = get_page_by_path( 'third' );
 		if( isset( $page ) ) {
