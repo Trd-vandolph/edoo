@@ -16,6 +16,21 @@
 	margin-bottom: 100px;
 	padding-bottom: 40px;
 }
+@media only screen and (max-width: 1024px) {
+	#mainvisual h2 span.firstjap {
+		font-size: 62px !important;
+	}
+}
+@media only screen and (max-width: 740px) {
+	#mainvisual h2 span.firstjap {
+		font-size: 31px !important;
+	}
+}
+@media only screen and (min-width: 740px) {
+	#mainvisual {
+		margin-bottom: 20px;
+	}
+}
 #mainvisual .wrap {
 	position: absolute;
 	top: 50%;
@@ -37,7 +52,7 @@
 }
 #mainvisual .secondline{
 	font-style: normal !important;
-	font-size: 26px;
+	font-size: 26px !important;
 	font-family: Raleway, sans-serif;
 }
 #mainvisual h2 span{
@@ -47,6 +62,23 @@
 #mainvisual h2 span.first,
 #mainvisual h2 span.firstjap{
 	font-size:85px;
+}
+@media screen and (max-width: 480px) {
+	#mainvisual h2 span{
+		font-size:24px;
+	}
+	#mainvisual h2 span.first{
+		font-size: 50px;
+	}
+	.selectlang, .selectjap {
+		display: none !important;
+	}
+	#responsive .olivecode {
+		background-size: contain !important;
+	}
+	#responsive .olivecode .detail, #responsive .olivecode h3 {
+		margin: 60px auto 0 auto !important;
+	}
 }
 #mainvisual h3{
 	font-family: 'PT Serif', serif;
@@ -65,39 +97,7 @@
 	width: 100%;
 	vertical-align: bottom;
 }
-@media only screen and (max-width: 1024px) {
-	#mainvisual h2 span.firstjap {
-		font-size: 62px !important;
-	}
-}
-@media only screen and (max-width: 740px) {
-	#mainvisual h2 span.firstjap {
-		font-size: 50px !important;
-	}
-	#mainvisual .secondline {
-		font-size: 19px !important;
-	}
-	#mainvisual {
-		margin-bottom: 20px;
-	}
-}
-@media screen and (max-width: 480px) {
-	#mainvisual h2 span{
-		font-size:24px;
-	}
-	#mainvisual h2 span.first{
-		font-size: 50px;
-	}
-	#mainvisual h2 span.firstjap {
-		font-size: 25px !important;
-	}
-	.selectlang, .selectjap {
-		display: none !important;
-	}
-	#responsive .olivecode {
-		background-size: contain !important;
-	}
-}
+
 
 /* about */
 #about {
@@ -140,15 +140,6 @@
 	}
 	#about ul li img{
 		width: 100%;
-	}
-	.sp-left {
-		text-align: left;
-	}
-}
-@media only screen and (max-width: 480px) {
-	.h2-ja {
-		width: 260px;
-		margin: auto;
 	}
 }
 
@@ -225,27 +216,15 @@
 	color:#333;
 	margin:0 0 40px 0;
 }
-#vision .contents li aside,
-#learning .contents li aside{
+#vision .contents li aside,#learning .contents li aside{
 	margin:0 0 40px 0;
 	padding:0 20px;
 }
-#vision .contents li p,
-#learning .contents li p{
+#vision .contents li p,#learning .contents li p{
 	font-size:16px;
 	color:#666;
 	padding:0 15px;
 }
-@media screen and (min-width: 740px) and (max-width: 1024px) and (orientation: portrait)  {
-	#vision .contents li:nth-child(2) h3 span{
-		display: block;
-		margin-bottom: -27px;
-	}
-	#vision .contents li .span-ja {
-		margin-bottom: 13px;
-	}
-}
-
 @media only screen and (max-width: 740px) {
 	#vision .summary ,#learning .summary {
 		padding-top: 300px;
@@ -362,11 +341,6 @@
 	background-size:cover;
 	padding: 80px 20px;
 }
-#responsive .sp_bg{
-	background: url(../img/responsive_design_service_2.png) no-repeat left top;
-	background-size:cover;
-	padding: 80px 20px;
-}
 #responsive .olivecode .detail,#responsive .olivecode h3{
 	max-width: 1155px;
 	text-align: center;
@@ -396,42 +370,41 @@
 	background: #96db17;
 }
 @media only screen and (max-width: 800px) {
-
+	#responsive .olivecode p{
+		color: #fff;
+		text-shadow:0 0 3px rgba(0,0,0,1);
+	}
 }
 @media only screen and (max-width: 1100px) {
 	#responsive .olivecode .detail, #responsive .olivecode h3 {
 		margin: 200px auto 0 auto;
 	}
-	#responsive h2 {
-		font-size: 50px;
-	}
 }
 @media only screen and (max-width: 740px) {
-	#responsive h2 {
-		font-size: 45px;
-	}
+	/*#responsive .olivecode{
+		background-size: contain;
+	}*/
 	#responsive .olivecode{
 		padding: 40px 20px;
-		background-size: contain;
 	}
 	#responsive .olivecode p{
 		padding-left: 0;
-		margin-bottom: 40px;
-		color: #333;
-	}
-	#responsive .olivecode .detail,
-	#responsive .olivecode h3 {
-		margin: 170px auto 0 auto;
-	}
-}
-@media only screen and (max-width: 480px) {
-	#responsive h2 {
-		font-size: 30px;
+		margin-bottom: 20px;
 	}
 	#responsive .olivecode .detail, #responsive .olivecode h3 {
-		margin: 160px auto 0 auto !important;
+		margin: 220px auto 0 auto;
+	}
+	#responsive .olivecode p {
+		margin-bottom: 40px;
 	}
 }
+
+@media only screen and (max-width: 740px) {
+	#responsive .olivecode .detail, #responsive .olivecode h3 {
+		margin: 120px auto 0 auto;
+	}
+}
+
 
 
 /* team */
@@ -512,6 +485,21 @@
 	max-width: 100%;
 	font-size: 25px;
 }
+/*@media only screen and (max-width: 1380px) {
+	.selectjap {
+		display: none !important;
+	}
+}*/
+/*@media only screen and (min-width: 1230px) and (max-width: 1380px) {
+	header .jap a:nth-child(2){
+		margin-left: 70px;
+	}
+}*/
+/*@media only screen and (min-width: 1070px) and (max-width: 1280px) {
+	.selectlang {
+		display: none !important;
+	}
+}*/
 @media only screen and (min-width: 740px) and (max-width: 1070px) {
 	#team ul{
 		margin: 80px 20px 140px 20px;
@@ -526,9 +514,13 @@
 	#team ul li:last-child{
 		margin: 0;
 	}
+	/*.selectlang {
+		display: none;
+	}*/
 }
 
 @media only screen and (min-width: 740px) {
+
 	#team ul li:nth-child(1) div p.baloon {
 	}
 	#team ul li:nth-child(2) div p.baloon {
@@ -560,12 +552,7 @@
 		margin-top: 20px;
 	}
 }
-/*Custom Media Query Size*/
-@media screen and (min-width: 740px) and (max-width: 900px) {
-	#team ul li h3 {
-		font-size: 13px;
-	}
-}
+
 /* contact */
 #contact {
 	background: #fff;

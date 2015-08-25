@@ -43,33 +43,20 @@ $(document).ready( function () {
     });
 });
 
+
+/*  responsive menu */
 $(function(){
-	var consultation = $('#fourth > div > div.three > div > span');
-
-	/* changing background when for smaller devices*/
-	var $res = $('#responsive .olivecode');
-	if($(window).width() < 480) {
-		$res.addClass('sp_bg');
-		//consultation.text('consu-ltation') ;
-	} else {
-		$res.removeClass('sp_bg');
-	}
-	//alert(consultation.text());
-
-	/*  responsive menu */
-	$("#toggle").click(function(){
-		$("header nav").slideToggle();
-		return false;
-	});
-	$(window).resize(function(){
-		var win = $(window).width();
-		var p = 480;
-		if(win > p){
-			$("#menu").show();
-			$res.removeClass('sp_bg');
-		} else {
-			$("#menu").hide();
-			$res.addClass('sp_bg');
-		}
-	});
+  $("#toggle").click(function(){
+    $("header nav").slideToggle();
+    return false;
+  });
+  $(window).resize(function(){
+    var win = $(window).width();
+    var p = 480;
+    if(win > p){
+      $("#menu").show();
+    } else {
+      $("#menu").hide();
+    }
+  });
 });

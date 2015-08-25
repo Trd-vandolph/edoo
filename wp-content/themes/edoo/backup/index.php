@@ -44,7 +44,7 @@
 </section>
 <section id="responsive">
 	<?php
-		$page = get_page_by_path( 'responsiveservice' );
+		$page = get_page_by_path( 'responsive' );
 		if( isset( $page ) ) {
 			echo apply_filters( 'the_content', $page->post_content );
 		}

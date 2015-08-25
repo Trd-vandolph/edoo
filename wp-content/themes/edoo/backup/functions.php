@@ -11,7 +11,7 @@ function en_flag_links(){
 	if (site_url() == $current_url) {
 		echo site_url() . '/?lang=en';
 	} else {
-		echo site_url() . '/responsive/?lang=en';
+		echo site_url() . '/responsivedesignservice/?lang=en';
 	}
 }
 function ja_flag_links(){
@@ -20,7 +20,7 @@ function ja_flag_links(){
 	if (site_url() == $current_url) {
 		echo site_url() . '/?lang=ja';
 	} else {
-		echo site_url() . '/responsive/?lang=ja';
+		echo site_url() . '/responsivedesignservice/?lang=ja';
 	}
 }
 
