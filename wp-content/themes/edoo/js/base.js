@@ -44,17 +44,14 @@ $(document).ready( function () {
 });
 
 $(function(){
-	var consultation = $('#fourth > div > div.three > div > span');
 
 	/* changing background when for smaller devices*/
 	var $res = $('#responsive .olivecode');
 	if($(window).width() < 480) {
 		$res.addClass('sp_bg');
-		//consultation.text('consu-ltation') ;
 	} else {
 		$res.removeClass('sp_bg');
 	}
-	//alert(consultation.text());
 
 	/*  responsive menu */
 	$("#toggle").click(function(){
@@ -63,8 +60,7 @@ $(function(){
 	});
 	$(window).resize(function(){
 		var win = $(window).width();
-		var p = 480;
-		if(win > p){
+		if(win > 480){
 			$("#menu").show();
 			$res.removeClass('sp_bg');
 		} else {

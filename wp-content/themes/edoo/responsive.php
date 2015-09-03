@@ -10,7 +10,7 @@
 ?>
 
 <?php get_header(); ?>
-<section id="first">
+<section id="first" class="<?php echo $ja; ?>">
 	<?php
 		$page = get_page_by_path( 'first' );
 		if( isset( $page ) ) {
@@ -18,7 +18,7 @@
 		}
 	?>
 </section>
-<section id="second">
+<section id="second" class="<?php echo $ja; ?>">
 	<?php
 		$page = get_page_by_path( 'second' );
 		if( isset( $page ) ) {
@@ -26,7 +26,7 @@
 		}
 	?>
 </section>
-<section id="third" class="<?php echo $en; ?>">
+<section id="third" class="<?php echo $en . $ja; ?>">
 	<?php
 		$page = get_page_by_path( 'third' );
 		if( isset( $page ) ) {
@@ -34,7 +34,7 @@
 		}
 	?>
 </section>
-<section id="fourth">
+<section id="fourth" class="<?php echo $ja; ?>">
 	<?php
 		$page = get_page_by_path( 'fourth' );
 		if( isset( $page ) ) {

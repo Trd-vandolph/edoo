@@ -277,6 +277,10 @@
 	#vision .summary ,#learning .summary {
 		background-size: auto 300px;
 	}
+	#learning .contents .learn-left {
+		text-align: left;
+		padding: 80px 10px 0;
+	}
 }
 
 /* service */
@@ -349,13 +353,17 @@
 #responsive {
 	background: #fff;
 }
-#responsive h2{
+#responsive h2 {
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
 	font-weight: 900;
 	font-size: 66px;
 	color: #355600;
-	padding: 80px 0;
+	padding: 80px 20px;
+}
+#responsive h2 span {
+	display: inline-block;
+	text-align: left;
 }
 #responsive .olivecode{
 	background: url(../img/responsive_design_service.png) no-repeat left top;
@@ -394,9 +402,6 @@
 }
 #responsive .olivecode a:hover{
 	background: #96db17;
-}
-@media only screen and (max-width: 800px) {
-
 }
 @media only screen and (max-width: 1100px) {
 	#responsive .olivecode .detail, #responsive .olivecode h3 {
@@ -627,12 +632,9 @@
 	height: 480px;
 }
 @media only screen and (min-width: 740px) {
-	#contact .map .world_map,#contact .map .fukuoka_map{
+	#contact .map .world_map{
 		width: 50%;
 		float: left;
-	}
-	#contact .map .world_map,#contact .jap .fukuoka_jap{
-		width: 50%;
 		margin: auto;
 	}
 }

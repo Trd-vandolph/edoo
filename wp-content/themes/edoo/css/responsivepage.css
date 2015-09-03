@@ -12,9 +12,14 @@
 	font-weight: 500;
 	line-height: 1.6;
 	color: #595757;
-	font-size: 108%;
+	font-size: 108% !important;
 }
-.green {
+#first.ja p, #second.ja p,
+#third.ja p, #fourth.ja p  {
+	font-weight: normal;
+}
+#main #first .green, #main #second .green,
+#main #third .green, #main #fourth .green {
 	background: #2DB58E;
 	padding: 14px;
 	color: white !important;
@@ -26,21 +31,27 @@
 	text-align: center;
 }
 .font-ja {
-	font-family: initial !important;
+	font-family: sans-serif; !important;
 	background: none !important;
 	color: #595757 !important;
 	padding: 0 !important;
+	font-size: 16px !important;
 }
 .font-en {
-	font-family: initial !important;
+	font-family: verdana !important;
 	background: none !important;
 	color: #595757 !important;
 	padding: 0 !important;
+	font-size: 16px;
 }
 span[class*="add-ja"] {
-	font-family: initial !important;
+	font-family: sans-serif; !important;
 }
-
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.font-en {
+		font-size: 17px;
+	}
+}
 /*First Page*/
 #first {
 	margin-top: 100px !important;
@@ -48,7 +59,7 @@ span[class*="add-ja"] {
 #first .google-en,
 #first .google-ja {
 	text-align: center;
-	font-size: 160%;
+	font-size: 160% !important;
 	color: #2DB58E;
 	padding: 10px 0;
 }
@@ -239,7 +250,7 @@ span[class*="add-ja"] {
 @media screen and (max-width: 480px) {
 	#second p:nth-child(8) img,
 	#second p:nth-child(9) img {
-		width: 100%;
+		width: 100% !important;
 	}
 }
 
@@ -374,6 +385,10 @@ span[class*="add-ja"] {
 	box-pack:center;
 	box-align:center;
 }
+#fourth .ja_font .one div .title, #fourth .ja_font .two div .title,
+#fourth .ja_font .three div .title, #fourth .ja_font .four div .title {
+	text-align: left !important;
+}
 #fourth .one div p, #fourth .two div p,
 #fourth .three div p, #fourth .four div p {
 	width: 72%;
@@ -386,12 +401,15 @@ span[class*="add-ja"] {
 	margin-top: 14px;
 }
 #fourth .footer-edoo {
-	font-size: 40px;
+	font-size: 40px !important;
 	padding: 5px 17px;
 }
 #fourth .footer-address {
 	font-size: 22px;
 	padding: 5px 17px;
+}
+#fourth .footer-address .font-en {
+	font-size: 15px;
 }
 #fourth	.footer-green {
 	padding: 5px 12px;
@@ -414,7 +432,7 @@ span[class*="add-ja"] {
 }
 @media screen and (max-width: 736px) {
 	#fourth .footer-edoo {
-		font-size: 27px;
+		font-size: 27px !important;
 	}
 	#fourth .footer-address {
 		font-size: 20px;
@@ -432,7 +450,7 @@ span[class*="add-ja"] {
 	#fourth p:nth-child(9) img {
 		width: 100%;
 	}
-	#fourth .three span {
+	#fourth .three .title {
 		-ms-word-break: break-all;
 		word-break: break-all;
 
@@ -449,7 +467,7 @@ span[class*="add-ja"] {
 }
 @media screen and (max-width: 480px) {
 	#fourth .footer-edoo {
-		font-size: 25px;
+		font-size: 20px !important;
 	}
 	#fourth .footer-address {
 		font-size: 16px;
@@ -459,7 +477,14 @@ span[class*="add-ja"] {
 		margin: 0 0 -25px 0;
 	}
 	#fourth .footer-green p {
-		font-size: 15px;
+		font-size: 13px !important;
+	}
+	#fourth .footer-green p a,
+	#fourth .ja_font .three .font-ja {
+		font-size: 16px !important;
+	}
+	#fourth .footer-en p {
+		font-size: 14px !important;
 	}
 	#fourth .footer-green div:nth-child(1) p:nth-child(1) span {
 		padding: 5px 14px;
@@ -469,5 +494,13 @@ span[class*="add-ja"] {
 	}
 	span[class*="add-ja"] {
 		display: block;
+		font-size: 16px !important;
+	}
+	#fourth .font-ja {
+		font-size: 13px !important;
+	}
+	/*Word of message of "Consultation" is not to be divided between rows.  */
+	.con-ja {
+		padding: 30px 0 0 0;
 	}
 }
