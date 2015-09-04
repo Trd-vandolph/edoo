@@ -42,4 +42,7 @@
 		}
 	?>
 </section>
+<div class="fixed-button">
+	<a href="<?php echo $fixed_button; ?>" target="_blank"><?php echo $fixed_message; ?></a>
+</div>
 <?php echo get_footer(); ?>

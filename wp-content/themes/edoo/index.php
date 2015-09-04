@@ -10,6 +10,16 @@
 	</div>
 	<p class="balloon"><img src="<?php bloginfo( 'template_directory' ); ?>/img/balloon.png" /></p>
 </section>
+<section id="banner">
+	<div class="wrap">
+		<?php
+			$page = get_page_by_path( 'banner' );
+			if( isset( $page ) ) {
+				echo apply_filters( 'the_content', $page->post_content );
+			}
+		?>
+	</div>
+</section>
 <section id="about">
 	<?php
 		$page = get_page_by_path( 'about' );

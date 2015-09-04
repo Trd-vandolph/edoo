@@ -98,6 +98,29 @@
 		background-size: contain !important;
 	}
 }
+/* banner */
+#banner {
+	padding: 10px;
+	box-sizing: border-box;
+}
+#banner .wrap {
+	font-weight: normal;
+	text-decoration: none;
+	color: #666666;
+	text-align: center;
+	font-style: normal;
+	font-size: 33px;
+	z-index: 1;
+	font-family: 'Raleway', sans-serif;
+	max-width: 600px;
+	width: 100%;
+	margin: auto;
+	border: 5px solid #666;
+	border-radius: 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
 
 /* about */
 #about {

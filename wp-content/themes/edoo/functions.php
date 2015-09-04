@@ -10,8 +10,8 @@ function en_flag_links(){
 	$current_url = home_url(add_query_arg(array(),$wp->request));
 	if (site_url() == $current_url) {
 		echo site_url() . '/?lang=en';
-    } elseif ($current_url == site_url() . '/contact-form'){
-        echo site_url() . '/contact-form?lang=en';
+	} elseif ($current_url == site_url() . '/contact-form'){
+		echo site_url() . '/contact-form?lang=en';
 	} else {
 		echo site_url() . '/responsive/?lang=en';
 	}
@@ -21,8 +21,8 @@ function ja_flag_links(){
 	$current_url = home_url(add_query_arg(array(),$wp->request));
 	if (site_url() == $current_url) {
 		echo site_url() . '/?lang=ja';
-    } elseif ($current_url == site_url() . '/contact-form'){
-        echo site_url() . '/contact-form?lang=ja';
+	} elseif ($current_url == site_url() . '/contact-form'){
+		echo site_url() . '/contact-form?lang=ja';
 	} else {
 		echo site_url() . '/responsive/?lang=ja';
 	}
@@ -30,11 +30,11 @@ function ja_flag_links(){
 
 //links
 if($_GET['lang'] == en){
-     $en = 'en';
+	$en = 'en';
+	$fixed_message = 'Contact us for Responsive Design Service';
+	$fixed_button = site_url() . '/contact-form?lang=en';
 } else {
-    $ja = 'ja';
+	$ja = 'ja';
+	$fixed_message = 'Contact us for Responsive Design Service';
+	$fixed_button = site_url() . '/contact-form?lang=ja';
 }
-//if($_GET['lang'] !== en) $ja = 'ja';
-//third frame en
-//if($_GET['lang'] == en) $en = 'third-en';
-?>
