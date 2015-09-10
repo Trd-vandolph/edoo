@@ -98,29 +98,6 @@
 		background-size: contain !important;
 	}
 }
-/* banner */
-#banner {
-	padding: 10px;
-	box-sizing: border-box;
-}
-#banner .wrap {
-	font-weight: normal;
-	text-decoration: none;
-	color: #666666;
-	text-align: center;
-	font-style: normal;
-	font-size: 32px;
-	z-index: 1;
-	font-family: 'Raleway', sans-serif;
-	max-width: 600px;
-	width: 100%;
-	margin: auto;
-	border: 5px solid #666;
-	border-radius: 15px;
-	padding: 15px;
-	box-sizing: border-box;
-	cursor: pointer;
-}
 
 /* about */
 #about {
@@ -300,7 +277,7 @@
 	#vision .summary ,#learning .summary {
 		background-size: auto 300px;
 	}
-	#learning .contents .learn-left {
+	#learning .contents p.learn-left {
 		text-align: left;
 		padding: 80px 10px 0;
 	}
@@ -434,6 +411,12 @@
 		font-size: 50px;
 	}
 }
+/*Apple iPad Mini Portrait View*/
+/*@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+	#responsive h2 {
+		text-align: left;
+	}
+}*/
 @media only screen and (max-width: 740px) {
 	#responsive h2 {
 		font-size: 45px;
@@ -466,7 +449,6 @@
 #team{
 	background: url(../img/team_bg.png) repeat-x top center;
 	padding-bottom: 80px;
-	padding: 10px;
 }
 #team h2{
 	font-family: 'Raleway', sans-serif;
@@ -483,6 +465,7 @@
 	max-width: 600px;
 	width: auto;
 	margin: auto;
+	padding: 10px;
 }
 #team p.catch{
 	font-size: 26px;
@@ -490,6 +473,7 @@
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	margin-bottom: 40px;
+	padding: 10px;
 }
 #team ul{
 	margin: 80px auto 140px auto;

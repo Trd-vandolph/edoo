@@ -68,27 +68,4 @@ $(function(){
 			$res.addClass('sp_bg');
 		}
 	});
-
-	//flickering banner
-	setInterval(function() {
-		$( ".b-on" ).fadeOut();
-	}, 3000);
-	setInterval(function() {
-		$( ".b-off" ).fadeIn();
-	}, 500);
-
-	var bannerEn = $('#banner .wrap .en');
-	var bannerJa = $('#banner .wrap .ja');
-	bannerEn.on('click', function(){
-		window.open(
-			'http://www.edoo.co.jp/responsive?lang=en',
-			'_blank'
-		);
-	});
-	bannerJa.on('click', function(){
-		window.open(
-			'http://www.edoo.co.jp/responsive?lang=ja',
-			'_blank'
-		);
-	});
 });
